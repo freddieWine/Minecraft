@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Minecraft Rus';
+    src: url('../fonts/minecraft.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    /* background-image: url(../img/bgbody.jpg); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Minecraft Rus';
+}
+
+.header {
+
+}
+
+.header__top {
+    
+}
+
+.list-forms-link {
+    display: flex;
+    justify-content: end;
+    column-gap: 20px;
+    padding: 10px 0;
+}
+
+.list-forms-link__item {
+
+}
+
+.form-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header__bottom {   
+    background-image: url(../img/kanyewest.jpeg);
+    background-size: 38%;
+    padding: 10px 0;
+
+}
+
+.header__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 300px;
+}
+
+.logo__img {
+    height: auto;
+}
+
+.menu {
+    
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+}
+
+.another-page-link {
+    
+}
+
+.another-page-link__holder-img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.another-page-link__holder-text {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.another-page-link__holder-text:hover {
+    color: #ffffff91;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+/* ==== main ==== */
+
+.main-info {
+    padding: 60px 0;
+
+}
+
+.main-info__content {
+    background:linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)), url(../img/mainbg.jpg);
+    height: 80vh;
+    width: 80%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 0 auto;
+
+}
+
+.about-minecraft {
+    color: #fff;
+    width: 90%;
+    text-shadow: 3px 3px black;
+}
+
+.about-minecraft__title {
+    font-size: 64px;
+    display: inline;
+}
+
+.about-minecraft__description {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+.border-line {
+    margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #4f0c0a;
+	box-shadow: 0 20px 20px -20px #f51a1a;
+	width: 95%;
+}
+
+.footer {
+    
+}
+.container {
+
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logo {
+
+}
+.logo__img {
+
+}
+.social-list {
+    display: flex;
+    column-gap: 10px;
+}
+.social-list__item {
+
+}
+.social-link {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    
+}
+
+.social-link:hover .social-link__icon {
+    fill: #73100d;
+}
+
+.social-link__icon {
+    fill: white;
+    transition: 175ms;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .menu__list {
+        column-gap: 10px;
+    }
+
+    .another-page-link__holder-img {
+        height: 70px;
+        width: 70px;
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .another-page-link__holder-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-info__content {
+        width: 100%;
+    }
+
+    .about-minecraft__title {
+        font-size: 36px;
+    }
+    
+    .about-minecraft__description {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__content {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .about-minecraft__title {
+        font-size: 26px;
+    }
+    
+    .about-minecraft__description {
+        font-size: 20px;
+    }
+    .footer__content {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .main-info {
+        padding-bottom: 0;
+    }
+    .main-info {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-minecraft__title {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about-minecraft__description {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .form-link {
+        font-size: 16px;
+    }
+}
