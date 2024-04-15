@@ -15,11 +15,12 @@ body {
 }
 
 .header {
-
+    position: fixed;
+    width: 100%;
 }
 
 .header__top {
-    
+    background-color: black;
 }
 
 .list-forms-link {
@@ -98,8 +99,8 @@ body {
 
 /* ==== main ==== */
 
-.main-info {
-    padding: 60px 0;
+.main {
+    padding: 220px 0 60px;
 
 }
 
@@ -216,6 +217,9 @@ body {
     .about-minecraft__description {
         font-size: 24px;
     }
+    .form-link {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -255,8 +259,11 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .form-link {
         font-size: 16px;
     }
-}
+} */
+
+
+
