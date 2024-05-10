@@ -187,6 +187,49 @@ body {
     transition: 175ms;
 }
 
+/* slider */
+
+.slider {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    column-gap: 10px;
+}
+
+.slider__slide {
+    /* width: 400px; */
+    height: 400px;
+    background-color: rgb(147, 8, 8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.slider__slide--first-image {
+    background-image: url(../img/slider-mech.jpg);
+}
+.slider__slide--second-image {
+    background-image: url(../img/slider-mobs.jpeg);
+}
+.slider__slide--third-image {
+    background-image: url(../img/slider-mp.png);
+}
+.slider__slide--fourth-image {
+    background-image: url(../img/slider-blocks.jpeg);
+}
+.slider__slide--fifth-image {
+    background-image: url(../img/slider-world.jpg);
+}
+
 /* Адаптив */
 @media (max-width: 900px) {
     .menu__list {
