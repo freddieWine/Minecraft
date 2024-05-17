@@ -211,7 +211,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider__slide--first-image {
@@ -228,6 +230,15 @@ body {
 }
 .slider__slide--fifth-image {
     background-image: url(../img/slider-world.jpg);
+}
+
+.slider__description {
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 3px 3px 2px #000;
+    width: 80%;
+    text-align:center;
 }
 
 /* Адаптив */
