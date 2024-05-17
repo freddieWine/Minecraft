@@ -191,8 +191,9 @@ body {
 
 .slider {
     width: 80%;
-    background-color: #fff;
+    position: relative;
     margin: 0 auto;
+    
 }
 
 .slick-list {
@@ -206,7 +207,7 @@ body {
 
 .slider__slide {
     /* width: 400px; */
-    height: 400px;
+    height: 50vh;
     background-color: rgb(147, 8, 8);
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,6 +241,35 @@ body {
     width: 80%;
     text-align:center;
 }
+
+.slick-dots {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    
+}
+
+.slick-dots button {
+    font-size: 0;
+    line-height: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 225ms;
+}
+
+.slick-active button {
+    background-color: #7b0f0c;
+}
+
+.slick-arrow {
+    display: none;
+}
+
 
 /* Адаптив */
 @media (max-width: 900px) {
